@@ -1,9 +1,10 @@
 import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import "./Style.css";
+import HeroSection from "../HeroSection/Index";
 const Header = () => {
   return (
-    <React.Fragment>
+    <>
       <header className="header">
         <a href="#" className="logo">
           Muzammil
@@ -21,7 +22,7 @@ const Header = () => {
           <a href="#contact">Contact</a>
         </nav>
       </header>
-    </React.Fragment>
+    </>
   );
 };
 
