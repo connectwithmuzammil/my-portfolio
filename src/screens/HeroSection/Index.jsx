@@ -1,10 +1,16 @@
-import React from "react";
+import Typed from "react-typed";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { img4, img5, img6 } from "../../assets/Images";
+import { img6 } from "../../assets/Images";
 import "./Style.css";
+import About from "../About/Index";
+import Services from "../Services/Index";
+import Portfolio from "../Portfolio/Index";
+import Contact from "../Contact/Index";
+import { NavLink } from "react-router-dom";
+
 const HeroSection = () => {
   return (
     <>
@@ -13,7 +19,16 @@ const HeroSection = () => {
           <h3>Hello, It's Me</h3>
           <h1>M Muzammil Khan</h1>
           <h3>
-            And I'm a <span>Full Stack Developer</span>
+            And I'm a{" "}
+            <span>
+              <Typed
+                strings={["Front End Developer", "Full Stack Web Developer"]}
+                typeSpeed={100}
+                backSpeed={100}
+                backDelay={1000}
+                loop={true}
+              />
+            </span>
           </h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
@@ -21,28 +36,35 @@ const HeroSection = () => {
             voluptas nisi.
           </p>
           <div className="social-media">
-            <a href="#">
+            <NavLink>
               <FacebookIcon />
-            </a>
-            <a href="">
+            </NavLink>
+
+            <NavLink>
               <TwitterIcon />
-            </a>
-            <a href="">
+            </NavLink>
+
+            <NavLink>
               <InstagramIcon />
-            </a>
-            <a href="">
+            </NavLink>
+
+            <NavLink>
               <LinkedInIcon />
-            </a>
+            </NavLink>
           </div>
-          <a href="#" download="muzammil" className="btn">
+          <NavLink className="btn" href={img6} download>
             Download CV
-          </a>
+          </NavLink>
         </div>
 
         <div className="home-img">
           <img src={img6} alt="" />
         </div>
       </section>
+      <About />
+      <Services />
+      <Portfolio />
+      <Contact />
     </>
   );
 };

@@ -1,7 +1,15 @@
-import React from "react";
 import { img5 } from "../../assets/Images";
 import "./Style.css";
+import { NavLink } from "react-router-dom";
 function About() {
+  // useEffect(() => {
+  //   window.addEventListener("scroll", HandleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", HandleScroll);
+  //   };
+  // }, []);
+
   return (
     <section className="about" id="about">
       <div className="about-img">
@@ -19,10 +27,10 @@ function About() {
           placeat, nobis similique aliquam harum reprehenderit quis quo
           consequuntur. Quia, blanditiis. Aliquam.
         </p>
-        <a href="#" className="btn">
-          {" "}
+        <NavLink to="/" className="btn">
           Read More
-        </a>
+        </NavLink>
+        {/* </a> */}
       </div>
     </section>
   );

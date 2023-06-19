@@ -27,6 +27,18 @@ span {
 }
 .home-img img {
   width: 30vw;
+  animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .social-media a {
   display: inline-flex;
@@ -60,4 +72,30 @@ span {
 }
 .btn:hover {
   box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
+  .home-content h3 {
+    font-size: 2.6rem;
+  }
+  .home-content h1 {
+    font-size: 5rem;
+  }
+  .home-img img {
+    width: 70vw;
+    margin-top: 4rem;
+  }
+}
+@media (max-width: 520px) {
+  .social-media {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 365px) {
+  .home-img img {
+    width: 90vw;
+  }
 }
