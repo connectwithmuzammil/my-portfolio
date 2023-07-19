@@ -1,7 +1,7 @@
 import Typed from "react-typed";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
+// import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { img6 } from "../../assets/Images";
 import "./Style.css";
@@ -36,21 +36,27 @@ const HeroSection = () => {
             voluptas nisi.
           </p>
           <div className="social-media">
-            <NavLink>
-              <FacebookIcon />
+            <NavLink
+              target="_blank"
+              to="https://www.linkedin.com/in/muzammil-khan-7ba36b194/"
+            >
+              <LinkedInIcon />
             </NavLink>
 
-            <NavLink>
+            <NavLink target="_blank" to="https://twitter.com/Muzammilmmk77">
               <TwitterIcon />
             </NavLink>
 
-            <NavLink>
-              <InstagramIcon />
+            <NavLink
+              target="_blank"
+              to="https://www.facebook.com/profile.php?id=100009884709340"
+            >
+              <FacebookIcon />
             </NavLink>
 
-            <NavLink>
-              <LinkedInIcon />
-            </NavLink>
+            {/* <NavLink>
+              <InstagramIcon />
+            </NavLink> */}
           </div>
           <NavLink className="btn" href={img6} download>
             Download CV

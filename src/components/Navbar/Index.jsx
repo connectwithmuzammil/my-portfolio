@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import "./Style.css";
-import {
-  FaFacebookSquare,
-  FaInstagramSquare,
-  FaYoutubeSquare,
-} from "react-icons/fa";
+
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import { NavLink } from "react-router-dom";
@@ -63,7 +59,7 @@ const Navbar = () => {
 
         {/* 3rd social media links */}
         <div className="social_Media">
-          <ul className="social_Media-desktop">
+          {/* <ul className="social_Media-desktop">
             <li>
               <a
                 href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
@@ -88,7 +84,7 @@ const Navbar = () => {
                 <FaYoutubeSquare className="youtube" />
               </a>
             </li>
-          </ul>
+          </ul> */}
 
           {/* hamburget menu start  */}
           <div className="hamburger-menu">

@@ -22,10 +22,16 @@ function About() {
         </h2>
         <h3>Front-End Developer</h3>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
-          voluptate, esse officiis labore provident ipsam maiores a libero
-          placeat, nobis similique aliquam harum reprehenderit quis quo
-          consequuntur. Quia, blanditiis. Aliquam.
+          skilled full-stack engineer with strong expertise in front-end
+          development, having worked with various types of websites including
+          CMS. Over the past 1+ years, I have worked professionally as a
+          JavaScript developer, specializing in Node.js and React.js. During
+          this time, I have achieved great success working in fast-paced team
+          environments. I have a proven track record of delivering high-quality
+          software solutions, creating captivating user interfaces, and ensuring
+          seamless user experiences. Passionate about staying up-to-date with
+          the latest front-end trends and advancements, I continuously enhance
+          my skills to deliver innovative solutions.
         </p>
         <NavLink to="/" className="btn">
           Read More
